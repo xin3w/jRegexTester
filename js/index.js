@@ -17,7 +17,7 @@ $(function () {
         bind();
         changeWorkMode(jrt.workMode.match);
         $tbReg.val("([^?&=]+)=([^?&=]*)");
-        $tbInput.val("0123456789
+        $tbInput.val(`0123456789
 123456
 123456.1
 123456.01
@@ -54,7 +54,7 @@ abc.com:8800
 110221820729561
 2011-01-01
 31
-1000.00");
+1000.00`);
         $tbReplace.val("\"$1\":\"$2\",\r\n");
         // cmReg = CodeMirror.fromTextArea(<HTMLTextAreaElement>$tbReg.get(0), {
         //     mode: "javascript",
