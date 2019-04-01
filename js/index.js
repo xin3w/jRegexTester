@@ -17,7 +17,44 @@ $(function () {
         bind();
         changeWorkMode(jrt.workMode.match);
         $tbReg.val("([^?&=]+)=([^?&=]*)");
-        $tbInput.val("https://www.google.com.hk/search?q=CodeMirror&aqs=chrome&sourceid=chrome&es_sm=91&ie=UTF-8");
+        $tbInput.val("0123456789
+123456
+123456.1
+123456.01
+-0123456789
+-123456
+-123456.1
+-123456.01
+ABCDEFG
+adfa_adfad123
+哈哈abc_efg
+abcdef
+http://www.baidu.com/a/b/c
+https://www.sohu.com?a=1&b=2
+102200
+a123a_
+!P@ssword
+13
+09
+31
+32
+abc.xml
+CC.XML
+42911349
+383606727
+1q2w3e4r5t
+xin3w@126.com
+xin3w.com
+张辉
+0.0.0.0
+abc.com:8800
+15801096350
+010-80199176
+110221198207295614
+110221820729561
+2011-01-01
+31
+1000.00");
         $tbReplace.val("\"$1\":\"$2\",\r\n");
         // cmReg = CodeMirror.fromTextArea(<HTMLTextAreaElement>$tbReg.get(0), {
         //     mode: "javascript",
